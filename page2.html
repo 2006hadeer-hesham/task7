@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./task7.html">
+</head>
+<body style="background-color: cadetblue;">
+    <div style="background-color: rgba(255, 255, 255, 0.8); text-align: center; padding: 20px; margin: 20px;">
+        <p style="text-align: center;">🌐</p>
+        <h1 style="color: blue; text-align: center;">Welcome Back</h1>
+        <label for="#"> Username</label>
+        <input id="username" type="text" name="username" id="#" placeholder="Enter Name">
+        <br>
+        <br>
+       <label for="##"> Password</label>
+       <input  type="password" name=" Password" id="##">
+       <br>
+       <br>
+       <button  onclick="fun()" style="background: linear-gradient(45deg , blue , gray);">↪ Lodin</button>
+       <p>Do Not have acount ? <a href="./task7.html">sing up</a></p>
+    </div>
+    
+
+
+
+    <script>
+        function fun(){
+           
+      let username = document.getElementById("username").value;
+      if(username) {
+        localStorage.setItem("username", username);
+        window.location.href = "page2.html"; 
+      }
+    
+    }
+
+      
+    </script>
+</body>
+</html>
